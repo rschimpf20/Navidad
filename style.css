@@ -1,0 +1,94 @@
+body{
+  margin: 0px;
+}
+
+#titulo{
+  width: 700px;
+  background-image: url(Imagenes/Titulo.png); 
+  height: 100px;
+  text-align: center;
+  margin: auto;  
+  margin-top: 10px;
+  background-repeat: no-repeat;  
+}
+
+#main{
+  background-image: url(Imagenes/Fondo.jpg);
+  position: absolute;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-content: center;
+  display: flexbox;
+  size: 100%;  
+  margin: 0px;
+}
+
+#contenedor{
+  width: auto;
+  height: auto;  
+  margin:auto;
+  margin-top: 20px;
+  display: inline-block; 
+  border: 5px solid rgb(234, 184 ,16); 
+  outline: 3px solid white;
+}
+
+.divParticipante{
+  width: 700px;
+  height: 70px;
+  background-color: white;
+  display: flex;
+}
+.divParticipante h2{
+  font-weight: lighter;  
+  font-family: Apple Chancery, cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  border-bottom:1px solid black ; 
+}
+
+.divParticipante .resultadoParticipante{
+  color: white;
+}
+
+.divParticipante .botonParticipante{
+  height: 95%;
+  width: 50%;  
+  background-image: url(Imagenes/Regalo.png);
+  background-size: 100%;
+  transition-duration: 0.4s;
+  margin-top: 2px;
+  border: none;  
+}
+
+.botonParticipante:hover { 
+  background-color: #6daf4c; /* Green */
+  opacity: 0.6;
+  animation: botonrotando 0.5s infinite;  
+}
+
+@keyframes botonrotando {
+  25%{transform: rotate(-3deg);}  
+  75%{transform: rotate(3deg);}
+  100%{transform: rotate(0deg);}
+}
+
+@keyframes aparecetexto{
+  0%{color: rgba(0,0,0,0);}
+  100%{color: rgba(0,0,0,100);}
+}
+
+.columna{
+  float:left
+}
+
+.izquierda, .derecha{
+  width: 40%;  
+}
+
+.medio{
+  width: 20%;
+}
