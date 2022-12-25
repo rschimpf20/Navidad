@@ -1,6 +1,7 @@
 //La idea es verlo en pantalla completa F11.
 
 const participantes = ["Nestor", "Estela", "Martín","Caro","Fernando", "Sonia", "Fede", "Michelle","Silvia", "Jorge"];
+participantes.sort(function(){return Math.random() - 0.5});
 const tamanoParticipantes = participantes.length;
 for(i=0; i <participantes.length ;i++){
   var cont= document.getElementById('contenedor');
